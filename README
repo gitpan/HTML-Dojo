@@ -1,5 +1,6 @@
 NAME
-    HTML::Dojo - Provides the Dojo AJAX distribution files.
+    HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.3.0
+    files.
 
 SYNOPSIS
         use HTML::Dojo;
@@ -10,12 +11,14 @@ SYNOPSIS
         
     my @files = $dojo->list( \%options );
         
-    my $file = $dojo->file( $filename, \%options );
+    my $data = $dojo->file( $filename, \%options );
 
 DESCRIPTION
-    HTML::Dojo provides the "dojo.js" and "iframe_history" files and the
-    entire "src" directory from the Dojo distribution
-    (<http://dojotoolkit.org>).
+    HTML::Dojo provides files from the Dojo JavaScript / AJAX distribution.
+
+    These files include the "dojo.js" file, the entire "src" directory, the
+    "iframe_history.html" file, various "*.swf" files, the "LICENSE",
+    "README" and "build.txt" files.
 
 METHODS
   new
@@ -30,7 +33,24 @@ METHODS
   editions
         $dojo->editions();
 
-    This method returns a list of all available editions.
+    This method returns a list of all available editions. Each edition
+    represents a distribution file made available by the Dojo Foundation,
+    and as such is subject to change with each release.
+
+    The current editions available are:
+
+    ajax
+    browserio
+    core
+    dashboard
+    editor
+    event
+    event_and_io
+    kitchen_sink
+    minimal
+    moxie
+    storage
+    widget
 
   list
         $dojo->list( \%options );
@@ -50,7 +70,7 @@ METHODS
 
     Optional arguments are:
 
-    "edition"
+    "edition", default "core".
 
 SEE ALSO
     <http://dojotoolkit.org>, HTML::Prototype
@@ -76,4 +96,13 @@ COPYRIGHT AND LICENSE
 
     The Dojo distribution files may be redistributed under either the
     modified BSD license or the Academic Free License version 2.1.
+
+POD ERRORS
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 147:
+        You forgot a '=back' before '=head2'
+
+        You forgot a '=back' before '=head2'
 

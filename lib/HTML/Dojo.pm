@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp qw/ croak /;
 
-our $VERSION = '0.0300';
+our $VERSION = '0.0301';
 
 our $COMMON_DATA;
 our $EDITIONS_DATA;
@@ -13,7 +13,7 @@ our $SRC_DATA;
 
 =head1 NAME
 
-HTML::Dojo - Provides the Dojo AJAX distribution 0.3.0 files.
+HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.3.0 files.
 
 =head1 SYNOPSIS
 
@@ -29,7 +29,7 @@ HTML::Dojo - Provides the Dojo AJAX distribution 0.3.0 files.
 
 =head1 DESCRIPTION
 
-HTML::Dojo provides files from the Dojo JavaScript/AJAX distribution.
+HTML::Dojo provides files from the Dojo JavaScript / AJAX distribution.
 
 These files include the C<dojo.js> file, the entire C<src> directory, 
 the C<iframe_history.html> file, various C<*.swf> files, the C<LICENSE>, 
@@ -101,6 +101,8 @@ The current editions available are:
 
 =item ajax
 
+=item ajax-xd
+
 =item browserio
 
 =item core
@@ -117,8 +119,6 @@ The current editions available are:
 
 =item minimal
 
-=item moxie
-
 =item storage
 
 =item widget
@@ -130,6 +130,7 @@ The current editions available are:
 sub editions {
     return qw/
         ajax
+        ajax-xd
         browserio
         core
         dashboard
@@ -138,7 +139,6 @@ sub editions {
         event_and_io
         kitchen_sink
         minimal
-        moxie
         storage
         widget
     /;
