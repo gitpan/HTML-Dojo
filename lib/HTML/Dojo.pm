@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp qw/ croak /;
 
-our $VERSION = '0.0301';
+our $VERSION = '0.0301.1';
 
 our $COMMON_DATA;
 our $EDITIONS_DATA;
@@ -13,7 +13,7 @@ our $SRC_DATA;
 
 =head1 NAME
 
-HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.3.0 files.
+HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.3.1 files.
 
 =head1 SYNOPSIS
 

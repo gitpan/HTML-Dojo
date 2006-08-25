@@ -1,17 +1,17 @@
 NAME
-    HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.3.0
+    HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.3.1
     files.
 
 SYNOPSIS
         use HTML::Dojo;
-        
-    my $dojo = HTML::Dojo->new;
-        
-    my @editions = $dojo->editions();
-        
-    my @files = $dojo->list( \%options );
-        
-    my $data = $dojo->file( $filename, \%options );
+    
+        my $dojo = HTML::Dojo->new;
+    
+        my @editions = $dojo->editions();
+    
+        my @files = $dojo->list( \%options );
+    
+        my $data = $dojo->file( $filename, \%options );
 
 DESCRIPTION
     HTML::Dojo provides files from the Dojo JavaScript / AJAX distribution.
@@ -40,6 +40,7 @@ METHODS
     The current editions available are:
 
     ajax
+    ajax-xd
     browserio
     core
     dashboard
@@ -48,61 +49,53 @@ METHODS
     event_and_io
     kitchen_sink
     minimal
-    moxie
     storage
     widget
 
   list
-        $dojo->list( \%options );
+                $dojo->list( \%options );
 
-    Returns an array-ref of all files available.
+            Returns an array-ref of all files available.
 
-    Optional arguments are:
+            Optional arguments are:
 
-    "edition"
-    "directories", include directory names, default 0
-    "files", include ordinary-file names, default 1
+            "edition"
+            "directories", include directory names, default 0
+            "files", include ordinary-file names, default 1
 
   file
-        $dojo->file( $filename, \%options )
+                $dojo->file( $filename, \%options )
 
-    Returns the contents of the named file.
+            Returns the contents of the named file.
 
-    Optional arguments are:
+            Optional arguments are:
 
-    "edition", default "core".
+            "edition", default "core".
 
 SEE ALSO
-    <http://dojotoolkit.org>, HTML::Prototype
+            <http://dojotoolkit.org>, HTML::Prototype
 
 SUPPORT
-    Catalyst mailing list:
+            Catalyst mailing list:
 
-        http://lists.rawmode.org/mailman/listinfo/catalyst
+                http://lists.rawmode.org/mailman/listinfo/catalyst
 
 AUTHOR
-    Carl Franks, <cfranks@cpan.org>
+            Carl Franks, <cfranks@cpan.org>
 
 COPYRIGHT AND LICENSE
-        Copyright (C) 2006 by Carl Franks
+                Copyright (C) 2006 by Carl Franks
 
-    This library is free software; you can redistribute it and/or modify it
-    under the same terms as Perl itself, either Perl version 5.8.8 or, at
-    your option, any later version of Perl 5 you may have available.
+            This library is free software; you can redistribute it and/or
+            modify it under the same terms as Perl itself, either Perl
+            version 5.8.8 or, at your option, any later version of Perl 5
+            you may have available.
 
-            Copyright (c) 2004-2005, The Dojo Foundation
+                    Copyright (c) 2004-2005, The Dojo Foundation
 
-            All Rights Reserved
+                    All Rights Reserved
 
-    The Dojo distribution files may be redistributed under either the
-    modified BSD license or the Academic Free License version 2.1.
-
-POD ERRORS
-    Hey! The above document had some coding errors, which are explained
-    below:
-
-    Around line 147:
-        You forgot a '=back' before '=head2'
-
-        You forgot a '=back' before '=head2'
+            The Dojo distribution files may be redistributed under either
+            the modified BSD license or the Academic Free License version
+            2.1.
 
