@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp qw/ croak /;
 
-our $VERSION = '0.0400';
+our $VERSION = '0.0400.0';
 
 our $COMMON_DATA;
 our $EDITIONS_DATA;
