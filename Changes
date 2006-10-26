@@ -1,5 +1,12 @@
 Revision history for Perl extension HTML::Dojo.
 
+0.0400 2006-10-26 15:29
+
+        - Dojo 0.4.0
+        - lfx edition added
+        - ajax-xd edition no longer provided
+        - storage edition no longer provided
+
 0.0301.1 2006-08-25 16:18:00
 
         - POD corrections only

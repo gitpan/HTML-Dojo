@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp qw/ croak /;
 
-our $VERSION = '0.0301.1';
+our $VERSION = '0.0400';
 
 our $COMMON_DATA;
 our $EDITIONS_DATA;
@@ -13,7 +13,7 @@ our $SRC_DATA;
 
 =head1 NAME
 
-HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.3.1 files.
+HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.4.0 files.
 
 =head1 SYNOPSIS
 
@@ -101,8 +101,6 @@ The current editions available are:
 
 =item ajax
 
-=item ajax-xd
-
 =item browserio
 
 =item core
@@ -117,9 +115,9 @@ The current editions available are:
 
 =item kitchen_sink
 
-=item minimal
+=item lfx
 
-=item storage
+=item minimal
 
 =item widget
 
@@ -130,7 +128,6 @@ The current editions available are:
 sub editions {
     return qw/
         ajax
-        ajax-xd
         browserio
         core
         dashboard
@@ -138,8 +135,8 @@ sub editions {
         event
         event_and_io
         kitchen_sink
+        lfx
         minimal
-        storage
         widget
     /;
 }
