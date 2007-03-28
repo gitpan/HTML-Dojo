@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp qw/ croak /;
 
-our $VERSION = '0.0401.0';
+our $VERSION = '0.0402.0';
 
 our $COMMON_DATA;
 our $EDITIONS_DATA;
@@ -13,7 +13,7 @@ our $SRC_DATA;
 
 =head1 NAME
 
-HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.4.1 files.
+HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.4.2 files.
 
 =head1 SYNOPSIS
 
@@ -107,8 +107,6 @@ The current editions available are:
 
 =item core
 
-=item dashboard
-
 =item dojoWebsite
 
 =item editor
@@ -141,15 +139,12 @@ sub editions {
         browserio
         charting
         core
-        dashboard
-        dojoWebsite
         editor
         event
         event_and_io
         kitchen_sink
-        lfx
         minimal
-        moxie
+        src
         storage
         widget
         xdomain-ajax

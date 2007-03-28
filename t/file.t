@@ -19,7 +19,7 @@ ok( my $dojo = HTML::Dojo->new );
 {
     my $file = $dojo->file( 'src/bootstrap1.js' );
     
-    ok( $file =~ /Copyright/ );
-    ok( $file =~ /bootstrap1.js/ );
+    ok( $file =~ /dojo\.global = function/ );
+    ok( $file =~ /dojo\.version = / );
 }
 
