@@ -1,5 +1,14 @@
 Revision history for Perl extension HTML::Dojo.
 
+0.0403.0 2007-05-22
+
+        - Dojo 0.4.3
+        - now defaults to 'ajax' edition
+        - browserio edition no longer provided
+        - core edition no longer provided
+        - event edition no longer provided
+        - minimal edition no longer provided
+
 0.0402.0 2007-03-28
 
         - Dojo 0.4.2

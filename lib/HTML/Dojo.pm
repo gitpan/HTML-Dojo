@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp qw/ croak /;
 
-our $VERSION = '0.0402.0';
+our $VERSION = '0.0403.0';
 
 our $COMMON_DATA;
 our $EDITIONS_DATA;
@@ -13,7 +13,7 @@ our $SRC_DATA;
 
 =head1 NAME
 
-HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.4.2 files.
+HTML::Dojo - Provides the Dojo JavaScript / AJAX distribution 0.4.3 files.
 
 =head1 SYNOPSIS
 
@@ -101,25 +101,17 @@ The current editions available are:
 
 =item ajax
 
-=item browserio
-
 =item charting
-
-=item core
 
 =item dojoWebsite
 
 =item editor
-
-=item event
 
 =item event_and_io
 
 =item kitchen_sink
 
 =item lfx
-
-=item minimal
 
 =item moxie
 
@@ -136,14 +128,10 @@ The current editions available are:
 sub editions {
     return qw/
         ajax
-        browserio
         charting
-        core
         editor
-        event
         event_and_io
         kitchen_sink
-        minimal
         src
         storage
         widget
@@ -174,7 +162,7 @@ Optional arguments are:
 sub list {
     my ($self, $opt) = @_;
     
-    my $edition = $opt->{edition} || $self->{edition} || 'core';
+    my $edition = $opt->{edition} || $self->{edition} || 'ajax';
     $opt->{directories} = 0 if ! exists $opt->{directories};
     $opt->{files}       = 1 if ! exists $opt->{files};
     
@@ -233,7 +221,7 @@ Optional arguments are:
 
 =over
 
-=item C<edition>, default C<core>.
+=item C<edition>, default C<ajax>.
 
 =back
 
@@ -242,7 +230,7 @@ Optional arguments are:
 sub file {
     my ($self, $filename, $opt) = @_;
     
-    my $edition = $opt->{edition} || $self->{edition} || 'core';
+    my $edition = $opt->{edition} || $self->{edition} || 'ajax';
     
     croak "too many arguments, options must be a hash-ref" if @_ > 3;
     
